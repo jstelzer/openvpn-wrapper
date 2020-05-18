@@ -2,8 +2,6 @@ extern crate exec;
 extern crate nix;
 extern crate libc;
 
-
-// https://docs.rs/exec/0.3.1/exec/struct.Command.html
 fn main() {
     let root_uid = nix::unistd::Uid::from_raw(0);
     nix::unistd::setuid(root_uid).expect("Unable to suid");
