@@ -1,6 +1,5 @@
 extern crate exec;
 extern crate nix;
-extern crate libc;
 
 fn main() {
     let root_uid = nix::unistd::Uid::from_raw(0);
